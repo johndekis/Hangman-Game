@@ -1,0 +1,56 @@
+body {
+    /*background-image: url("../images/smokeBackground.jpg")*/
+    background-color: black;
+}
+
+#hanging {
+    
+    background-color: none;
+}
+
+ h1 {
+    
+}
+
+img {
+    height: 300px;
+    border: 3px solid black;
+
+}
+.jumbotron {
+    background-image: url("../images/dragon1.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: white;
+    height: 500px;
+    color: white;
+    border: 3px solid white;
+}
+
+div.jumbotron {
+    background-color: white;
+}
+
+#blanks {
+    font-size: 50px;
+    text-align: center;
+    width: 800px;
+}
+
+#headBox {
+    background-image: url("../images/black-hole1.jpg");
+    background-position: left;
+    height:400px;
+}
+
+@media (max-width: 768px){
+    
+    #headBox {
+        height: 600px;
+        font-weight: bold;
+    }
+    #blanks {
+        width:400px;
+        font-size: 40px;
+    }
+}
