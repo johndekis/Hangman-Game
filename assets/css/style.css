@@ -46,9 +46,14 @@ div.jumbotron {
 }
 
 
-@media (max-width: 1300px){
+@media (max-width: 1375px){
     #scores{
         left: 200px;
+    }
+}
+@media (max-width: 990px){
+    #scores {
+        left: 50px;
     }
 }
 
