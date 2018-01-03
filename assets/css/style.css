@@ -9,8 +9,8 @@ body {
     background-color: none;
 }
 
- h1 {
-    
+#scores {
+    top: -30px;
 }
 
 img {
@@ -23,9 +23,9 @@ img {
     background-position: center top;
     background-repeat: no-repeat;
     background-color: white;
-    height: 500px;
+    height: 540px;
     color: white;
-    border: 3px solid white;
+    border: 8px solid white;
 }
 
 div.jumbotron {
@@ -34,6 +34,7 @@ div.jumbotron {
 
 #blanks {
     font-size: 50px;
+    margin: 0 auto;
     text-align: center;
     width: 800px;
 }
@@ -41,7 +42,14 @@ div.jumbotron {
 #headBox {
     background-image: url("../images/black-hole1.jpg");
     background-position: left;
-    height:400px;
+    height:420px;
+}
+
+
+@media (max-width: 1300px){
+    #scores{
+        left: 200px;
+    }
 }
 
 @media (max-width: 768px){
@@ -53,5 +61,9 @@ div.jumbotron {
     #blanks {
         width:400px;
         font-size: 40px;
+    }
+    #scores {
+        top: 0;
+        left:0;
     }
 }
