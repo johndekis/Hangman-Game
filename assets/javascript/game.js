@@ -11,6 +11,7 @@ var wins = 0;           //wins and losses start at zero
 var losses = 0;
 
 //audio
+var soundtrack = new Audio("assets/audio/soundtrack.mp3")
 var victory = new Audio("assets/audio/victory-roar.mp3");
 var incinerate = new Audio("assets/audio/incinerate.mp3");
 
@@ -34,6 +35,9 @@ function start() {
 
 //main game
     function hangman() {
+        soundtrack.loop = true;
+        soundtrack.play();
+
     document.onkeyup = function(event){
         if (!(event.which <= 90 && event.which >= 65)) return //restricts game to only letter keys
         guess = event.key.toUpperCase();
